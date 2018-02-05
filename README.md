@@ -3,12 +3,12 @@
 Este es un sketch de mi portafolio personal.
 Este contará con una barra de navegación fija en el top de la página, con 4 secciones principales (Acerca de mí, Habilidades técnicas, Proyectos, Contacto), además de un botón para cambiar de idioma entre español e inglés.
 Este portafolio tendrá la siguiente paleta de colores basados en colores de galaxia:
-- ![#EC186CFF](https://placehold.it/15/f03c15/000000?text=+) `#EC186CFF`
-- ![#8D2999FF](https://placehold.it/15/f03c15/000000?text=+) `#8D2999FF`
-- ![#6D206EFF](https://placehold.it/15/f03c15/000000?text=+) `#6D206EFF`
-- ![#361446FF](https://placehold.it/15/f03c15/000000?text=+) `#361446FF`
-- ![#141959FF](https://placehold.it/15/f03c15/000000?text=+) `#141959FF`
-- ![#403BEFFF](https://placehold.it/15/f03c15/000000?text=+) `#403BEFFF`
+- ![#EC186CFF](https://placehold.it/15/EC186CFF/000000?text=+) `#EC186CFF`
+- ![#8D2999FF](https://placehold.it/15/8D2999FF/000000?text=+) `#8D2999FF`
+- ![#6D206EFF](https://placehold.it/15/6D206EFF/000000?text=+) `#6D206EFF`
+- ![#361446FF](https://placehold.it/15/361446FF/000000?text=+) `#361446FF`
+- ![#141959FF](https://placehold.it/15/141959FF/000000?text=+) `#141959FF`
+- ![#403BEFFF](https://placehold.it/15/403BEFFF/000000?text=+) `#403BEFFF`
 
 En cada sección dominará alguno de los colores anteriores.
 ***
