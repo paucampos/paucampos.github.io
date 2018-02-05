@@ -26,6 +26,6 @@ En cada sección dominará alguno de los colores anteriores.
 - Iconos con link de: Github, LinkedIn, Twitter.
 - Mi correo y CV.
 
-![## Sketch portafolio](link_imagen "Sketch portafolio")
+![## Sketch portafolio](https://github.com/Pauliih/Pauliih/blob/master/assets/img/sketch.jpeg "Sketch portafolio")
 ####Este archivo es la versión `0.0.1`
 @author Paula Campos
