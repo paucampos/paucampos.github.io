@@ -14,8 +14,162 @@
 </head>
 <body>
   <div class="background">  
-    <h1 class="text-center">Portafolio Pau</h1>
+    <!--<h1 class="text-center">Portafolio Pau</h1>-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-navbar">
+      <a class="navbar-brand" href="#">PC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">Acerca de mí
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me">Contáctame</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Idioma
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Español</a>
+              <a class="dropdown-item" href="#">English</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center">Acerca de mí</h2>
+          </div>
+          <div id="img-profile" class="col-sm-3 col-12">
+            <img src="assets/img/profile.png" class="img-thumbnail rounded" alt="profile-img">
+            <h3 class="text-center">Paula Campos</h3>
+          </div>
+          <div id="description" class="col-12 col-sm-9">
+            <p class="text-center">Me considero una persona preocupada de los detalles, suelo estar en constante aprendizaje y actualizando conocimientos. Tengo
+            la capacidad de adaptarme, soy responsable y me considero una persona empática, que puede trabajar en equipo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center">Habilidades técnicas</h2>
+          </div>
+          <div class="skills col-sm-6 col-12">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="skills col-12 col-sm-6">
+            <ul>
+              <li>SASS</li>
+              <li>Javascript</li>
+              <li>jQuery</li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center">Proyectos</h2>
+          </div>
+          <div id="slider-projects" class="col-sm-12 col-12">
+            <!-- Carrusel -->
+          </div>
+          <div id="my-projects" class="col-12 col-sm-12">
+            <div class="row">
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-me">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center">Contáctame</h2>
+          </div>
+          <div id="img-profile" class="col-sm-3 col-12">
+            <img src="assets/img/profile.png" class="img-thumbnail rounded" alt="profile-img">
+          </div>
+          <div id="description" class="col-12 col-sm-9">
+            <p class="text-center">Me considero una persona preocupada de los detalles, suelo estar en constante aprendizaje y actualizando conocimientos.
+              Tengo la capacidad de adaptarme, soy responsable y me considero una persona empática, que puede trabajar en equipo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="text-center">Paula Campos 2018</p>
+    </footer>
   </div>
+
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="assets/js/app.js"></script>
