@@ -1,3 +1,4 @@
+// CANVAS
 var canvas = document.querySelector('canvas'),
   ctx = canvas.getContext("2d"),
   w = canvas.width = window.innerWidth,
@@ -95,3 +96,8 @@ function animation() {
 }
 
 animation();
+
+// HOVER ICONS SKILLS
+$("#skills li i").hover(function() {
+  $(this).addClass("fa-6x");
+  });

@@ -23,17 +23,28 @@ h2 {
   padding: 1em;
   /* background-color: rgba(0,0,0,0.5); */
 }
+
 #skills li{
-  /* list-style: none; */
   padding: 0.5em;
   cursor: pointer;
 }
+
+.social li {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#projects .card {
+  margin-bottom: 2em;
+}
+
 .social li a {
   color: #fff;
 }
 
 .social li a:hover {
   color: #EC186CFF;
+  text-decoration: none;
 }
 
 .navbar-nav li a:hover{
@@ -65,14 +76,18 @@ h2 {
 .navbar a{
     color:  #fff;
 }
+
 #about, #skills, #projects, #my-projects, #contact-me {
   padding-top: 3.3em;
 }
 
-#about, #skills, #contact-me {
-  height: 100vh;
+#about, #skills {
+  min-height: 100vh;
 }
 
+#contact-me form {
+  margin-bottom: 2em;
+}
 .btn-demo {
   background-color: #361446FF;
   color: #EC186CFF; 
@@ -90,19 +105,14 @@ footer {
 
 /* Contacto */
 
-.form-group {
-  margin-top: 10px;
-}
-
 textarea.form-control {
-    height: 135px;
+    height: 8em;
 }
 
 .submit {
   font-size: 1.1em;
   float: right;
   margin-top: 0.5em;
-  /* background-color: transparent; */
   background-color: rgba(0,0,0,0.2);
   color: #fff;
   border: 2px solid 
@@ -118,4 +128,5 @@ textarea.form-control {
 .canvas {
   background: #141959FF;
   overflow: hidden;
+  width: 100%;
 }

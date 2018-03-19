@@ -38,7 +38,8 @@
         <li class="nav-item">
           <a class="nav-link" href="#contact-me">Contáctame</a>
         </li>
-        <li class="nav-item dropdown">
+        <!-- Idioma -->
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Idioma
           </a>
@@ -46,11 +47,11 @@
             <a class="dropdown-item" href="#">Español</a>
             <a class="dropdown-item" href="#">English</a>
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>
-
+  <!-- ABOUT -->
   <section id="about">
     <div class="container">
       <div class="row">
@@ -69,7 +70,7 @@
       </div>
     </div>
   </section>
-
+  <!-- SKILLS -->
   <section id="skills">
     <div class="container">
       <div class="row">
@@ -93,7 +94,7 @@
       </div>
     </div>
   </section>
-
+  <!-- PROJECTS -->
   <section id="projects">
     <div class="container-fluid">
       <div class="row">
@@ -137,7 +138,7 @@
 
         <div id="my-projects" class="col-12 col-sm-12">
           <div class="row">
-            <div class="col-12 col-sm-3">
+            <div class="col-12 col-sm-6 col-md-6">
               <div class="card" style="width: 15rem;">
                 <img class="card-img-top" src="assets/img/PhotoBooth(DragAndDrop).png" alt="Card image cap">
                 <div class="card-body">
@@ -147,7 +148,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-3">
+            <div class="col-12 col-sm-6 col-md-6">
               <div class="card" style="width: 15rem;">
                 <img class="card-img-top" src="assets/img/profile.png" alt="Card image cap">
                 <div class="card-body">
@@ -157,7 +158,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-3">
+            <div class="col-12 col-sm-6 col-md-6">
               <div class="card" style="width: 15rem;">
                 <img class="card-img-top" src="assets/img/profile.png" alt="Card image cap">
                 <div class="card-body">
@@ -167,7 +168,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-3">
+            <div class="col-12 col-sm-6 col-md-6">
               <div class="card" style="width: 15rem;">
                 <img class="card-img-top" src="assets/img/profile.png" alt="Card image cap">
                 <div class="card-body">
@@ -182,7 +183,7 @@
       </div>
     </div>
   </section>
-
+  <!-- CONTACT -->
   <section id="contact-me">
     <div class="container">
       <div class="row">
@@ -192,52 +193,60 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <form>
+          <form method="POST" action="https://formspree.io/pau.campos89@gmail.com">
             <div class="row">
-              <div class="col form-line">
-                <div class="form-group">
-                  <label for="lblUsername">Nombre</label>
-                  <input type="text" class="form-control" id="formName" placeholder="Ingresa tu nombre">
-                </div>
+              <div class="col-12 col-sm-6 col-md-6 form-line">
                 <div class="form-group">
                   <label for="lblEmail">Email</label>
-                  <input type="email" class="form-control" id="lblEmail" placeholder="Ingresa tu emai">
+                  <input type="email" name="email" class="form-control" id="lblEmail" placeholder="Ingresa tu email">
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="lbltelephone">Número de teléfono</label>
                   <input type="tel" class="form-control" id="phone" placeholder="Ingresa tu numero de teléfono">
-                </div>
+                </div> -->
               </div>
-              <div class="col">
+              <div class="col-12 col-sm-6 col-md-6">
                 <div cl ass="form-group">
                   <label for="description">Mensaje</label>
-                  <textarea class="form-control" id="description" placeholder="Ingresa tu mensaje"></textarea>
+                  <textarea name="message" class="form-control" id="description" placeholder="Ingresa tu mensaje"></textarea>
                 </div>
                 <div>
-                  <button type="button" class="btn btn-default submit">
+                  <button type="submit" class="btn btn-default submit">
                     <i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar</button>
                 </div>
               </div>
             </div>
-          </form>
+          </form> 
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-          <ul class="list-unstyled list-inline social text-center">
-            <li class="list-inline-item">
+        <div class="col-12 col-sm-12 col-md-12 ">
+          <ul class="social list-unstyled list-inline text-center">
+            <li class="list-inline-item text-center">
+              <a href="#">
+                <i class="fab fa-2x fa-whatsapp"></i>
+                <br>
+                <p class="text-center">+569 98464237</p>
+              </a>
+            </li>
+            <li class="list-inline-item text-center">
               <a href="https://www.github.com/Pauliih">
-                <i class="fab fa-2x fa-github"></i>
+                <i class="fab fa-2x fa-github"></i><br>
+                <p class="text-center">www.github.com/Pauliih</p>
               </a>
             </li>
-            <li class="list-inline-item">
+          </ul>
+          <ul class="social list-unstyled list-inline text-center">
+            <li class="list-inline-item text-center">
               <a href="https://www.linkedin.com/in/paula-campos-campos/">
-                <i class="fab fa-2x fa-linkedin"></i>
+                <i class="fab fa-2x fa-linkedin"></i><br>
+                <p class="text-center">www.linkedin.com/in/paula-campos-campos</p>
               </a>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item ">
               <a href="mailto:pau.campos89@gmail.com" target="_blank">
-                <i class="fa fa-2x fa-envelope"></i>
+                <i class="fa fa-2x fa-envelope"></i><br>
+                <p class="text-center">pau.campos89@gmail.com</p>
               </a>
             </li>
           </ul>
@@ -246,7 +255,7 @@
       </div>
     </div>
   </section>
-
+  <!-- FOOTER -->
   <footer>
     <p class="text-center">PAULA CAMPOS ©2018</p>
   </footer>
