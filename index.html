@@ -13,164 +13,258 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="background">  
-    <!--<h1 class="text-center">Portafolio Pau</h1>-->
-    <nav class="navbar navbar-expand-lg fixed-top bg-navbar">
-      <a class="navbar-brand" href="#">PC</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about">Acerca de mí
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-me">Contáctame</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Idioma
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Español</a>
-              <a class="dropdown-item" href="#">English</a>
+  <nav class="navbar navbar-expand-lg fixed-top bg-navbar">
+    <a class="navbar-brand" href="#">PC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">Acerca de mí
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-me">Contáctame</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Idioma
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Español</a>
+            <a class="dropdown-item" href="#">English</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">Acerca de mí</h2>
+        </div>
+        <div id="img-profile" class="col-sm-3 col-12">
+          <img src="assets/img/port.jpg" class="img-thumbnail rounded" alt="profile-img">
+          <h3 class="text-center">Paula Campos</h3>
+        </div>
+        <div id="description" class="col-12 col-sm-9">
+          <p class="text-justify">Me considero una persona preocupada de los detalles, suelo estar en constante aprendizaje y actualizando conocimientos. Tengo
+          la capacidad de adaptarme, soy responsable y me considero una persona empática, que puede trabajar en equipo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">Habilidades técnicas</h2>
+        </div>
+        <div class="skills col-sm-6 col-12">
+          <ul>
+            <li>HTML5: <i class="fas fa-bicycle"></i></li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+            <li>SASS</li>
+          </ul>
+        </div>
+        <div class="skills col-12 col-sm-6">
+          <ul>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>React</li>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">Proyectos</h2>
+        </div>
+
+        <div id="slider-projects" class="col-sm-12 col-12">
+          <!-- Carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block mx-auto" src="assets/img/PhotoBooth(DragAndDrop).png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block mx-auto" src="assets/img/762446.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block mx-auto" src="assets/img/762465.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block mx-auto" src="assets/img/762470.jpg" alt="Fourth slide">
+              </div>
             </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
 
-    <section id="about">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="text-center">Acerca de mí</h2>
-          </div>
-          <div id="img-profile" class="col-sm-3 col-12">
-            <img src="assets/img/profile.png" class="img-thumbnail rounded" alt="profile-img">
-            <h3 class="text-center">Paula Campos</h3>
-          </div>
-          <div id="description" class="col-12 col-sm-9">
-            <p class="text-center">Me considero una persona preocupada de los detalles, suelo estar en constante aprendizaje y actualizando conocimientos. Tengo
-            la capacidad de adaptarme, soy responsable y me considero una persona empática, que puede trabajar en equipo.</p>
+        <div id="my-projects" class="col-12 col-sm-12">
+          <div class="row">
+            <div class="col-12 col-sm-3">
+              <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="assets/img/PhotoBooth(DragAndDrop).png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Insta Collage</h5>
+                  <p class="card-text">Uso de Drag and Drop.</p>
+                  <a href="https://pauliih.github.io/insta-collage/" target="_blank" class="btn btn-demo">DEMO</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3">
+              <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="assets/img/profile.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-demo">DEMO</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3">
+              <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="assets/img/profile.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-demo">DEMO</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3">
+              <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="assets/img/profile.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-demo">DEMO</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="skills">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="text-center">Habilidades técnicas</h2>
-          </div>
-          <div class="skills col-sm-6 col-12">
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
-          <div class="skills col-12 col-sm-6">
-            <ul>
-              <li>SASS</li>
-              <li>Javascript</li>
-              <li>jQuery</li>
-          </div>
+  <section id="contact-me">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">Contáctame</h2>
         </div>
       </div>
-    </section>
-
-    <section id="projects">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="text-center">Proyectos</h2>
-          </div>
-          <div id="slider-projects" class="col-sm-12 col-12">
-            <!-- Carrusel -->
-          </div>
-          <div id="my-projects" class="col-12 col-sm-12">
+      <div class="row">
+        <div class="col-12">
+          <form>
             <div class="row">
-              <div class="col-3">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+              <div class="col form-line">
+                <div class="form-group">
+                  <label for="lblUsername">Nombre</label>
+                  <input type="text" class="form-control" id="formName" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="form-group">
+                  <label for="lblEmail">Email</label>
+                  <input type="email" class="form-control" id="lblEmail" placeholder="Ingresa tu emai">
+                </div>
+                <div class="form-group">
+                  <label for="lbltelephone">Número de teléfono</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Ingresa tu numero de teléfono">
                 </div>
               </div>
-              <div class="col-3">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="description">Mensaje</label>
+                  <textarea class="form-control" id="description" placeholder="Ingresa tu mensaje"></textarea>
                 </div>
-              </div>
-              <div class="col-3">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+                <div>
+                  <button type="button" class="btn btn-default submit">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>Enviar</button>
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
-    </section>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item">
+              <a href="javascript:void();">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="javascript:void();">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="javascript:void();">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="javascript:void();">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="javascript:void();" target="_blank">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        </hr>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact-me">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="text-center">Contáctame</h2>
-          </div>
-          <div id="img-profile" class="col-sm-3 col-12">
-            <img src="assets/img/profile.png" class="img-thumbnail rounded" alt="profile-img">
-          </div>
-          <div id="description" class="col-12 col-sm-9">
-            <p class="text-center">Me considero una persona preocupada de los detalles, suelo estar en constante aprendizaje y actualizando conocimientos.
-              Tengo la capacidad de adaptarme, soy responsable y me considero una persona empática, que puede trabajar en equipo.</p>
-          </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center">PAULA CAMPOS ©2018</p>
         </div>
       </div>
-    </section>
-
-    <footer>
-      <p class="text-center">Paula Campos 2018</p>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
