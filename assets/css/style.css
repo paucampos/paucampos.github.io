@@ -38,6 +38,10 @@ h2 {
   margin-bottom: 2em;
 }
 
+.card {
+  max-width: 15rem;
+}
+
 .social li a {
   color: #fff;
 }
