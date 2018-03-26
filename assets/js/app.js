@@ -99,5 +99,5 @@ animation();
 
 // HOVER ICONS SKILLS
 $("#skills li i").hover(function() {
-  $(this).addClass("fa-6x");
-  });
+  $(this).toggleClass("fa-4x");
+});
