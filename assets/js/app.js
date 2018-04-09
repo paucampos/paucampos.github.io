@@ -98,6 +98,6 @@ function animation() {
 animation();
 
 // HOVER ICONS SKILLS
-$("#skills li i").hover(function() {
-  $(this).toggleClass("fa-4x");
-});
+// $("#skills li i").hover(function() {
+//   $(this).toggleClass("fa-4x");
+// });

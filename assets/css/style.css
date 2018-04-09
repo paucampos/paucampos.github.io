@@ -16,18 +16,12 @@ body {
   color:#361446FF;
 }
 
-.btn-menu{
-  background-color: #EC186CFF;
-  color:#fff;
-}
-
 .arroba {
   padding-top: 1em;
 }
 
 h2 {
   padding: 1em;
-  /* background-color: rgba(0,0,0,0.5); */
 }
 
 #skills li{
@@ -57,21 +51,32 @@ h2 {
   text-decoration: none;
 }
 
+/* barra */
 .navbar-nav li a:hover{
   color: #EC186CFF;
   background-color: #361446FF;
+}
+
+.btn-menu{
+  background-color: #EC186CFF;
+  color:#fff;
 }
 
 .navbar-nav li {
   padding-right: 1em;
 }
 
-#about, #skills, #projects, #contact-me{  
-  border-bottom: 0.1em solid rgba(1,1,1,0.1);
-}
-
 .bg-navbar, .dropdown-menu {
   background-color: #361446FF;
+}
+
+.navbar a{
+    color:  #fff;
+}
+/* fin barra */
+
+#about, #skills, #projects, #contact-me{  
+  border-bottom: 0.1em solid rgba(1,1,1,0.1);
 }
 
 .card-body {
@@ -81,10 +86,6 @@ h2 {
 .carousel-item img {
   height: 50vh;
   width: auto!important;
-}
-
-.navbar a{
-    color:  #fff;
 }
 
 #about, #skills, #projects, #my-projects, #contact-me {
@@ -98,15 +99,14 @@ h2 {
 #contact-me form {
   margin-bottom: 2em;
 }
+
 .btn-code {
   background-color: #EC186CFF;
-  /* #361446FF; */
   color: #fff; 
 }
 
 .btn-demo {
   background-color: #EC186CFF;
-  /* #361446FF; */
   color: #fff; 
 }
 .btn-code, .btn-demo {
@@ -156,7 +156,7 @@ textarea.form-control {
 }
 
 .card-text {
-  height: 5.3em;
+  min-height: 5.3em;
 }
 
 /* Canvas */
