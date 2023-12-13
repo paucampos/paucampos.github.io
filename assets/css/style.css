@@ -1,19 +1,18 @@
 /*Paleta de colores Portafolio*/
 
-/*color: #EC186CFF, #8D2999FF, #6D206EFF, #361446FF, #141959FF, #403BEFFF;*/
 body {
   overflow-x: hidden; /* Oculta scroll horizontal */
   width: 100%;
   color: #fffffa;
-  font-family: 'Lato', sans-serif;
-  background: #EC186CFF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #141959FF, #EC186CFF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #141959FF, #EC186CFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Lato", sans-serif;
+  background: #ec186cff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #141959ff, #ec186cff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #141959ff, #ec186cff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .font-stroke {
   font-size: 1.2em;
-  color:#361446FF;
+  color: #361446ff;
 }
 
 .arroba {
@@ -24,7 +23,7 @@ h2 {
   padding: 1em;
 }
 
-#skills li{
+#skills li {
   padding: 1em;
   cursor: pointer;
 }
@@ -47,52 +46,61 @@ h2 {
 }
 
 .social li a:hover {
-  color: #EC186CFF;
+  color: #ec186cff;
   text-decoration: none;
 }
 
 /* barra */
-.navbar-nav li a:hover{
-  color: #EC186CFF;
-  background-color: #361446FF;
+.navbar-nav li a:hover {
+  color: #ec186cff;
+  background-color: #361446ff;
 }
 
-.btn-menu{
-  background-color: #EC186CFF;
-  color:#fff;
+.btn-menu {
+  background-color: #ec186cff;
+  color: #fff;
 }
 
 .navbar-nav li {
   padding-right: 1em;
 }
 
-.bg-navbar, .dropdown-menu {
-  background-color: #361446FF;
+.bg-navbar,
+.dropdown-menu {
+  background-color: #361446ff;
 }
 
-.navbar a{
-    color:  #fff;
+.navbar a {
+  color: #fff;
 }
 /* fin barra */
 
-#about, #skills, #projects, #contact-me{  
-  border-bottom: 0.1em solid rgba(1,1,1,0.1);
+#about,
+#skills,
+#projects,
+#contact-me {
+  border-bottom: 0.1em solid rgba(1, 1, 1, 0.1);
 }
 
 .card-body {
-  color: #403BEFFF;
+  color: #403befff;
 }
 
 .carousel-item img {
   height: 50vh;
-  width: auto!important;
+  width: auto !important;
 }
 
-#about, #skills, #projects, #my-projects, #contact-me {
+#about,
+#skills,
+#projects,
+#my-projects,
+#contact-me {
   padding-top: 3.3em;
 }
 
-#about, #skills {
+#about,
+#skills {
   min-height: 100vh;
 }
 
@@ -101,15 +109,16 @@ h2 {
 }
 
 .btn-code {
-  background-color: #EC186CFF;
-  color: #fff; 
+  background-color: #ec186cff;
+  color: #fff;
 }
 
 .btn-demo {
-  background-color: #EC186CFF;
-  color: #fff; 
+  background-color: #ec186cff;
+  color: #fff;
 }
-.btn-code, .btn-demo {
+.btn-code,
+.btn-demo {
   margin-bottom: 0.5em;
 }
 
@@ -124,35 +133,35 @@ footer {
   bottom: 0;
   padding-top: 0.5em;
   padding-bottom: 0.1em;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Contacto */
 
 textarea.form-control {
-    height: 8em;
+  height: 8em;
 }
 
 .submit {
   font-size: 1.1em;
   float: right;
   margin-top: 0.5em;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
-  border: 2px solid 
+  border: 2px solid;
 }
 
 .submit:hover {
-  color: #EC186CFF;
-  background-color: #361446FF;
+  color: #ec186cff;
+  background-color: #361446ff;
   /* opacity: 0.5; */
 }
 
 .card-body {
   color: #fffffa;
-  background: #EC186CFF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #141959FF, #EC186CFF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #141959FF, #EC186CFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ec186cff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #141959ff, #ec186cff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #141959ff, #ec186cff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .card-text {
@@ -161,7 +170,33 @@ textarea.form-control {
 
 /* Canvas */
 .canvas {
-  background: #141959FF;
+  background: #141959ff;
   overflow: hidden;
   width: 100%;
+}
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  /* background: black; */
+  /* color: white; */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.display-none {
+  display: none;
 }

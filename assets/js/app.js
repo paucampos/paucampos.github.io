@@ -1,30 +1,33 @@
 // CANVAS
-var canvas = document.querySelector('canvas'),
-  ctx = canvas.getContext("2d"),
-  w = canvas.width = window.innerWidth,
-  h = canvas.height = window.innerHeight,
+let canvas = document.querySelector('canvas'),
+  ctx = canvas.getContext('2d'),
+  w = (canvas.width = window.innerWidth),
+  h = (canvas.height = window.innerHeight),
   hue = 250,
   stars = [],
   count = 0,
   maxStars = 1400;
 
 // Cache gradient
-var canvas2 = document.createElement('canvas'),
+let canvas2 = document.createElement('canvas'),
   ctx2 = canvas2.getContext('2d');
-  canvas2.width = 100;
-  canvas2.height = 100;
-  half = canvas2.width / 2,
-  gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
-  gradient2.addColorStop(0.025, '#EC186CFF');
-  gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
-  gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
-  gradient2.addColorStop(1, 'transparent');
+
+canvas2.width = 100;
+canvas2.height = 100;
+
+const HALF = canvas2.width / 2,
+  gradient2 = ctx2.createRadialGradient(HALF, HALF, 0, HALF, HALF, HALF);
+
+gradient2.addColorStop(0.025, '#EC186CFF');
+gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
+gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
+gradient2.addColorStop(1, 'transparent');
 
 ctx2.fillStyle = gradient2;
 ctx2.beginPath();
-ctx2.arc(half, half, half, 0, Math.PI * 2);
+ctx2.arc(HALF, HALF, HALF, 0, Math.PI * 2);
 ctx2.fill();
-// End cache
+// End cache gradient
 
 function random(min, max) {
   if (arguments.length < 2) {
@@ -33,22 +36,21 @@ function random(min, max) {
   }
 
   if (min > max) {
-    var hold = max;
+    const HOLD = max;
     max = min;
-    min = hold;
+    min = HOLD;
   }
 
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function maxOrbit(x, y) {
-  var max = Math.max(x, y),
-    diameter = Math.round(Math.sqrt(max * max + max * max));
+  const MAX = Math.max(x, y),
+    diameter = Math.round(Math.sqrt(MAX * MAX + MAX * MAX));
   return diameter / 2;
 }
 
-var Star = function () {
-
+function Star() {
   this.orbitRadius = random(maxOrbit(w, h));
   this.radius = random(60, this.orbitRadius) / 12;
   this.orbitX = w / 2;
@@ -59,11 +61,11 @@ var Star = function () {
 
   count++;
   stars[count] = this;
-}
+};
 
 Star.prototype.draw = function () {
-  var x = Math.sin(this.timePassed) * this.orbitRadius + this.orbitX,
-    y = Math.cos(this.timePassed) * this.orbitRadius + this.orbitY,
+  const X = Math.sin(this.timePassed) * this.orbitRadius + this.orbitX,
+    Y = Math.cos(this.timePassed) * this.orbitRadius + this.orbitY,
     twinkle = random(10);
 
   if (twinkle === 1 && this.alpha > 0) {
@@ -73,31 +75,37 @@ Star.prototype.draw = function () {
   }
 
   ctx.globalAlpha = this.alpha;
-  ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
+  ctx.drawImage(canvas2, X - this.radius / 2, Y - this.radius / 2, this.radius, this.radius);
   this.timePassed += this.speed;
-}
+};
 
-for (var i = 0; i < maxStars; i++) {
+for (let i = 0; i < maxStars; i++) {
   new Star();
 }
 
 function animation() {
   ctx.globalCompositeOperation = 'source-over';
-  ctx.globalAlpha = 0.8;
+  ctx.globalAlpha = .8;
   ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
-  ctx.fillRect(0, 0, w, h)
-
+  ctx.fillRect(0, 0, w, h);
   ctx.globalCompositeOperation = 'lighter';
-  for (var i = 1, l = stars.length; i < l; i++) {
-    stars[i].draw();
-  };
+
+  stars.forEach((star) => {
+    star.draw();
+  });
 
   window.requestAnimationFrame(animation);
 }
 
 animation();
 
-// HOVER ICONS SKILLS
-// $("#skills li i").hover(function() {
-//   $(this).toggleClass("fa-4x");
-// });
+// Splash
+const splash = document.querySelector('.splash');
+const portfolio = document.querySelector('.portfolio');
+
+document.addEventListener('DOMContentLoaded', (e) => {
+  setTimeout(() => {
+    portfolio.classList.remove('display-none');
+    splash.classList.add('display-none');
+  }, 2800);
+});
