@@ -1,9 +1,5 @@
 'use strict'
 
-const token_ig = secrets.IG_TOKEN;
-
-let token = document.querySelector('#token');
-
 // CANVAS
 let canvas = document.querySelector('canvas'),
   ctx = canvas.getContext('2d'),
@@ -110,8 +106,6 @@ const splash = document.querySelector('.splash');
 const portfolio = document.querySelector('.portfolio');
 
 document.addEventListener('DOMContentLoaded', (e) => {
-  token.innerHTML(token_ig);
-
   setTimeout(() => {
     portfolio.classList.remove('display-none');
     splash.classList.add('display-none');
