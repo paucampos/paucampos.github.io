@@ -1,6 +1,6 @@
 'use strict'
 
-const token_ig = process.env.IG_TOKEN;
+const token_ig = secrets.IG_TOKEN;
 
 let token = document.querySelector('#token');
 
